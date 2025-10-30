@@ -1,0 +1,84 @@
+ul
+{
+    /* remove the default decoration of li */
+    list-style: none;
+
+    /* to make  nav head and nav in the same line - check once again*/
+    padding-top: 10px;
+    
+}
+ul li{
+    /*  Display the nav elements horizontally */
+    display: inline;
+
+    /*  make space between the links in the nav bar */
+    padding: 30px;
+}
+
+li:hover a
+{
+    /* change the anchor tag text to blue on cursor over the tabs */
+    color: blue;
+}
+
+li button
+{
+    background-color: aqua;
+} 
+
+#header-div
+{
+    /* display the nav and title horizontally using grid property */
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /* color to the background */
+    background-color: azure;
+}
+
+#nav-head
+{
+    margin-left: 10px;
+    color: aqua;
+    font-weight: lighter;
+}
+main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px 50px;
+    background-color: aqua;
+}
+
+#left-div{
+   padding: 40px;
+   
+}
+#left-div h1,
+#left-div p,
+#left-div h3{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#right-div
+{
+    padding-top: 10px;
+    
+}
+img{
+    margin: 50px;
+    /* make image as round in shape */
+    border-radius: 50%;
+}
+
+button
+{
+    background-color: blue;
+    color: aliceblue;
+
+    /* make button stylish  */
+    border-radius: 8px;
+    
+}
+
+
+
+
