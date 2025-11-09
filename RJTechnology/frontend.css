@@ -58,6 +58,11 @@ h6 {
 #phone {
   flex: 2;
 }
+
+#email:hover ,#phone:hover
+{
+    color: red;
+}
 #icons {
   /* give space between the icons */
   padding: 20px;
