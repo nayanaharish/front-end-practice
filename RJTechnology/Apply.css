@@ -1,0 +1,102 @@
+
+body,h1,h2,h3,h4,h5,h6,p,div,form
+{
+    margin: 0;
+}
+
+.logo
+ {
+   background: linear-gradient(to right,rgb(30, 136, 30), rgb(152, 200, 152));
+   width: 100%; 
+   margin: 0;    
+}
+
+.logo section
+{
+    position: absolute;
+    right: 40%;
+    bottom: 60%;
+}
+
+.logo section div
+{
+    padding-top: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    
+}
+.form
+{
+    height: 900px;
+    padding: 60px 40px;
+    margin: 0;
+        
+}
+
+
+.apply-online
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 10px;
+    height: 900px;;
+    margin: 0;
+}
+#buttons
+{
+    text-align: center;
+}
+
+#buttons input[type="reset"] ,#buttons input[type="submit"] 
+
+{
+    margin-top: 30px;
+    margin-right: 40px;
+    background-color: rgb(82, 135, 82);       
+    border-radius: 50px;
+    width: 150px;
+    padding: 10px; 
+    
+}
+
+
+.inner-div
+{
+    display: flex;
+    flex-direction: column;     
+    padding-top: 30px;   
+    
+}
+.inner-div textarea
+{     
+ width: 822px;
+ height: 90px;
+ border-color:ghostwhite;
+ border-width: 5px;
+}
+.length-fields
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 100px;   
+       
+}
+
+.length-fields input
+{
+    width: 300px;
+}
+
+
+
+
+.inner-div input
+{
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+     padding: 10px;
+     border-width: 1px;
+     border-color:gray;
+     
+}
+

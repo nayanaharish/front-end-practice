@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* remove all default margin */
+h1,p,section,h2,h3,h4,h5,h6
+{
+    margin:0;
+   
+}
+
+/* 1st header  */
+#offer-nav
+{
+   background-color: orange; 
+   height: 30px;   
+   display: flex;   
+   align-items: center;
+   
+}
+
+#movingtext{
+    
+    animation: translate 6s  infinite alternate;
+}
+
+@keyframes translate{
+    
+   /* 0%   { transform: translateX(0); }        start position */
+  50%  { transform: translateX(100%); }     /* move a bit right */
+  100% { transform: translateX(50%); }    /* move a bit left */
+
+
+    
+}
+
+
+#offer-nav p
+{
+    padding-left: 100px;
+}
+/* 2nd header */
+#contact-div
+{
+    margin: 0px;
+    background-color:rgb(2, 2, 53);
+    color: aliceblue;  
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    /* give space from left and right of the contact div */
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+}
+#email
+{
+    flex: 1;
+}
+#phone
+{
+    flex: 2;
+}
+#icons
+{
+    /* give space between the icons */
+    padding: 20px;
+}
+
+#icons i
+{
+    padding: 20px;
+    color: aliceblue;
+}
+
+
+
+/* 3rd header */
+#nav
+{
+    background-color: rgb(187, 214, 196);;
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;   
+    justify-content: flex-start;   
+    
+}
+    
+#nav h3
+{
+    color: #055343;
+    padding-left: 0px;
+    margin-left: 30px;
+    padding-top: 25px;
+   
+}
+
+
+#nav ul li
+{
+    display: inline;
+    padding: 20px;    
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* for drop down from the courses nav link */
+
+#dropdown-li-ul
+{
+    position: absolute; 
+    left: 550px; 
+    top: 200px;  
+    background-color: rgb(214, 221, 214);
+    padding: 2px;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    
+
+}
+#dropdown-li:hover #dropdown-li-ul
+{
+   display: flex;
+}
+
+#dropdown-li-ul li:hover 
+{
+    background-color: black;
+    
+}
+#dropdown-li-ul li:hover a
+{
+    color:rgb(214, 221, 214);
+}
+
+
+
+
+
+#nav button
+{    
+    text-align: center;
+    background-color:#055343;  
+    margin-left: 100px;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5%;   
+    
+}
+
+.wrap-button-form
+{
+    display: inline;
+}
+
+/* Enquiry Form */
+    .enquiry-form
+    {
+        display:none;  
+        position: absolute;        
+        width: 400px;
+        z-index: 5;        
+        background-color:rgb(233, 239, 233);        
+        right: 50px;
+        border-radius: 5px;
+        text-align: center;
+                
+    }
+    .form 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items:center;  
+        justify-content:left;
+        gap: 5px;       
+        
+    }
+     .form input
+    {
+        width: 250px;
+        padding: 10px;
+        
+    }
+    
+    .form select
+    {
+        width: 270px;
+        padding: 10px 0px;
+        margin: 5px 50px;
+    }
+
+    .form input[type="button"]
+    {       
+       background-color: #055343;
+       margin-bottom: 10px;
+       border-radius: 5px;
+       font-size: large;
+       font-style: normal;
+    } 
+
+    .enquiry-form nav ul{
+        display: flex ;
+        align-items: center;
+        gap: 60px;
+        background-color: #055343;
+        padding: 10px 5px;
+        margin-left: 35px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+    }
+
+    .enquiry-form nav ul span
+    {
+        display: flex;
+        /* align-items: center; */
+        /* gap: 10px; */
+
+    }
+
+    
+   
+.wrap-button-form:hover  .enquiry-form {
+  display: block;
+}
+
+
