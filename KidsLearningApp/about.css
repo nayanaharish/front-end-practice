@@ -1,0 +1,89 @@
+body
+{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+ul li
+{
+    display: inline;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: azure;
+}
+
+nav h3{
+    color: aqua;
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul button
+{
+     border-radius: 8px;
+     background-color: aqua;
+}
+main
+{
+    margin-left: 20px ;
+    margin-top: 40px;
+    font-family: cursive;
+}
+
+.section1
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+      
+}
+.text-area1
+{
+    padding-left: 30px;
+    padding-right: 169px;
+   
+}
+
+
+
+.section2
+{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+      
+}
+.text-area2
+{   
+     margin-left: 25px;
+     padding-right: 100px;
+}
+.image-area2
+{   
+    text-align: center;
+}
+
+.section3
+{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+}
+
+
+

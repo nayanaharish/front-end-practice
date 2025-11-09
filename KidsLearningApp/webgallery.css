@@ -1,0 +1,66 @@
+body
+{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+ul li
+{
+    display: inline;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: azure;
+}
+
+nav h3{
+    color: aqua;
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul button
+{
+     border-radius: 8px;
+     background-color: aqua;
+}
+
+#gallery
+{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+    
+}
+
+img
+{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    grid-gap: 5px;
+}
+footer
+{
+    background-color: blue;
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
