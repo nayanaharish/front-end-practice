@@ -1,331 +1,283 @@
-body{
-    margin: 0;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 /* remove all default margin */
-h1,p,section,h2,h3,h4,h5,h6
-{
-    margin:0;
-   
+h1,
+p,
+section,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 /* 1st header  */
-#offer-nav
-{
-   background-color: orange; 
-   height: 30px;   
-   display: flex;   
-   align-items: center;
-   
+#offer-nav {
+  background-color: orange;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 
-#movingtext{
-    
-    animation: translate 6s  infinite alternate;
+#movingtext {
+  animation: translate 6s infinite alternate;
 }
 
-@keyframes translate{
-    
-   /* 0%   { transform: translateX(0); }        start position */
-  50%  { transform: translateX(100%); }     /* move a bit right */
-  100% { transform: translateX(50%); }    /* move a bit left */
-
-
-    
+@keyframes translate {
+  /* 0%   { transform: translateX(0); }        start position */
+  50% {
+    transform: translateX(100%);
+  } /* move a bit right */
+  100% {
+    transform: translateX(50%);
+  } /* move a bit left */
 }
 
-
-#offer-nav p
-{
-    padding-left: 100px;
+#offer-nav p {
+  padding-left: 100px;
 }
 /* 2nd header */
-#contact-div
-{
-    margin: 0px;
-    background-color:rgb(2, 2, 53);
-    color: aliceblue;  
-    font-weight: bold; 
-    display: flex;
-    align-items: center;
-    /* give space from left and right of the contact div */
-    padding-left: 20px;
-    padding-right: 20px;
-
-    
+#contact-div {
+  margin: 0px;
+  background-color: rgb(2, 2, 53);
+  color: aliceblue;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  /* give space from left and right of the contact div */
+  padding-left: 20px;
+  padding-right: 20px;
 }
-#email
-{
-    flex: 1;
+#email {
+  flex: 1;
 }
-#phone
-{
-    flex: 2;
+#phone {
+  flex: 2;
 }
-#icons
-{
-    /* give space between the icons */
-    padding: 20px;
+#icons {
+  /* give space between the icons */
+  padding: 20px;
 }
 
-#icons i
-{
-    padding: 20px;
-    color: aliceblue;
+#icons i {
+  padding: 20px;
+  color: aliceblue;
 }
-
-
 
 /* 3rd header */
-#nav
-{
-    background-color: rgb(187, 214, 196);;
-    display: flex;
-    font-size: x-large;
-    font-weight: bold;   
-    justify-content: flex-start;   
-    
-}
-    
-#nav h3
-{
-    color: #055343;
-    padding-left: 0px;
-    margin-left: 30px;
-    padding-top: 25px;
-   
+#nav {
+  background-color: rgb(187, 214, 196);
+  display: flex;
+  font-size: x-large;
+  font-weight: bold;
+  justify-content: flex-start;
 }
 
-
-#nav ul li
-{
-    display: inline;
-    padding: 20px;    
+#nav h3 {
+  color: #055343;
+  padding-left: 0px;
+  margin-left: 30px;
+  padding-top: 25px;
 }
 
-#nav ul li a{
-    text-decoration: none;
-    color: black;
+#nav ul li {
+  display: inline;
+  padding: 20px;
+}
+
+#nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 /* for drop down from the courses nav link */
 
-#dropdown-li-ul
-{
-    position: absolute; 
-    left: 550px; 
-    top: 200px;  
-    background-color: rgb(214, 221, 214);
-    padding: 2px;
-    z-index: 1;
-    display: none;
-    flex-direction: column;
-    
-
+#dropdown-li-ul {
+  position: absolute;
+  left: 550px;
+  top: 200px;
+  background-color: rgb(214, 221, 214);
+  padding: 2px;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
 }
-#dropdown-li:hover #dropdown-li-ul
-{
-   display: flex;
+#dropdown-li:hover #dropdown-li-ul {
+  display: flex;
 }
 
-#dropdown-li-ul li:hover 
-{
-    background-color: black;
-    
+#dropdown-li-ul li:hover {
+  background-color: black;
 }
-#dropdown-li-ul li:hover a
-{
-    color:rgb(214, 221, 214);
+#dropdown-li-ul li:hover a {
+  color: rgb(214, 221, 214);
 }
 
-
-
-
-
-#nav button
-{    
-    text-align: center;
-    background-color:#055343;  
-    margin-left: 100px;
-    padding: 10px 40px;
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 5%;   
-    
+#nav button {
+  text-align: center;
+  background-color: #055343;
+  margin-left: 100px;
+  padding: 10px 40px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 5%;
 }
 
-.wrap-button-form
-{
-    display: inline;
+.wrap-button-form {
+  display: inline;
 }
 
 /* Enquiry Form */
-    .enquiry-form
-    {
-        display:none;  
-        position: absolute;        
-        width: 400px;
-        z-index: 5;        
-        background-color:rgb(233, 239, 233);        
-        right: 50px;
-        border-radius: 5px;
-        text-align: center;
-                
-    }
-    .form 
-    {
-        display: flex;
-        flex-direction: column;
-        align-items:center;  
-        justify-content:left;
-        gap: 5px;       
-        
-    }
-     .form input
-    {
-        width: 250px;
-        padding: 10px;
-        
-    }
-    
-    .form select
-    {
-        width: 270px;
-        padding: 10px 0px;
-        margin: 5px 50px;
-    }
+.enquiry-form {
+  display: none;
+  position: absolute;
+  width: 400px;
+  z-index: 5;
+  background-color: rgb(233, 239, 233);
+  right: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+}
+.form input {
+  width: 250px;
+  padding: 10px;
+}
 
-    .form input[type="button"]
-    {       
-       background-color: #055343;
-       margin-bottom: 10px;
-       border-radius: 5px;
-       font-size: large;
-       font-style: normal;
-    } 
+.form select {
+  width: 270px;
+  padding: 10px 0px;
+  margin: 5px 50px;
+}
 
-    .enquiry-form nav ul{
-        display: flex ;
-        align-items: center;
-        gap: 60px;
-        background-color: #055343;
-        padding: 10px 5px;
-        margin-left: 35px;
-        margin-bottom: 10px;
-        margin-right: 15px;
-    }
+.form input[type="button"] {
+  background-color: #055343;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: large;
+  font-style: normal;
+}
 
-    .enquiry-form nav ul span
-    {
-        display: flex;
-        /* align-items: center; */
-        /* gap: 10px; */
+.enquiry-form nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background-color: #055343;
+  padding: 10px 5px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
 
-    }
+.enquiry-form nav ul span {
+  display: flex;
+  /* align-items: center; */
+  /* gap: 10px; */
+}
 
-    
-   
-.wrap-button-form:hover  .enquiry-form {
+.wrap-button-form:hover .enquiry-form {
   display: block;
 }
 
-
 /* main 4 buttons */
 
-.buttons
-{
-    text-align: center;
-    
+.buttons {
+  text-align: center;
 }
-.details-button
-{
-    background-color: green;
-    padding: 10px;
-    font-size: 20px;
+.details-button {
+  background-color: green;
+  padding: 10px;
+  font-size: 20px;
 }
-.course_button
-{
-    background-color: blueviolet;
-    padding: 10px;
-    font-size: 15px;
+.course_button {
+  background-color: blueviolet;
+  padding: 10px;
+  font-size: 15px;
 }
 
 /* 
 course purpose list
  */
-.main-info h3
-{
-    text-align: center;
-    color: #055343;
-    padding: 10px;
+.main-info h3 {
+  text-align: center;
+  color: #055343;
+  padding: 10px;
 }
 
-.main-info div
-{
-    text-align: left;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    margin:30px 40px;
-    padding: 10px;
+.main-info div {
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 30px 40px;
+  padding: 10px;
 }
 
 /* HTML CSS JS REACT  */
-.html,.css,.js,.react
-{
-    background-color: #055343;
-    color: aliceblue;
-     margin:1px 40px;
-     padding: 10px;
-
+.html,
+.css,
+.js,
+.react {
+  background-color: #055343;
+  color: aliceblue;
+  margin: 1px 40px;
+  padding: 10px;
 }
-.html-desc,.css-desc,.js-desc,.react-desc{
-
-    list-style: disc;
-    margin:1px 40px;
-    padding: 1px 10px;
-    overflow: scroll;
-    height: 150px;
-    list-style-position: inside;
-    display: none;
-
+.html-desc,
+.css-desc,
+.js-desc,
+.react-desc {
+  list-style: disc;
+  margin: 1px 40px;
+  padding: 1px 10px;
+  overflow: scroll;
+  height: 150px;
+  list-style-position: inside;
+  display: none;
 }
 
 /* disable the checkboxes */
 
-#toggle-html,#toggle-css,#toggle-js,#toggle-react
-{
-    display: none;
+#toggle-html,
+#toggle-css,
+#toggle-js,
+#toggle-react {
+  display: none;
 }
 
-.html,.css,.js,.react{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.html,
+.css,
+.js,
+.react {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* for html toggle */
-#toggle-html:checked +.html +.html-desc
-{
-    display: block;
+#toggle-html:checked + .html + .html-desc {
+  display: block;
 }
 /* for css toggle*/
-#toggle-css:checked +.css +.css-desc
-{
-    display: block;
+#toggle-css:checked + .css + .css-desc {
+  display: block;
 }
 
 /* for js */
-#toggle-js:checked +.js +.js-desc
-{
-    display: block;
+#toggle-js:checked + .js + .js-desc {
+  display: block;
 }
 
 /* for react */
-#toggle-react:checked +.react +.react-desc
-{
-    display: block;
+#toggle-react:checked + .react + .react-desc {
+  display: block;
 }
-
-
-
