@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the checkbox (we only need its state) */
+#toggle-form {
+  display: none;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: 220px;
+  z-index: 10;
+}
+
+/* When checkbox is checked → show form */
+#toggle-form:checked + .hover-btn + .form-popup {
+  display: block;
+}
+
+/* Optional hover behaviour: keep visible while inside form */
+.form-popup:hover {
+  display: block;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+  <input type="checkbox" id="toggle-form">
+  <label for="toggle-form" class="hover-btn">Enquiry</label>
+
+  <div class="form-popup">
+    <p>Request a Call Back</p>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button type="submit">Submit</button>
+  </div>
+</div>
+
+</body>
+</html>

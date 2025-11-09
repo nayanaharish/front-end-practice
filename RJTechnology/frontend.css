@@ -232,3 +232,100 @@ h1,p,section,h2,h3,h4,h5,h6
 }
 
 
+/* main 4 buttons */
+
+.buttons
+{
+    text-align: center;
+    
+}
+.details-button
+{
+    background-color: green;
+    padding: 10px;
+    font-size: 20px;
+}
+.course_button
+{
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* 
+course purpose list
+ */
+.main-info h3
+{
+    text-align: center;
+    color: #055343;
+    padding: 10px;
+}
+
+.main-info div
+{
+    text-align: left;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin:30px 40px;
+    padding: 10px;
+}
+
+/* HTML CSS JS REACT  */
+.html,.css,.js,.react
+{
+    background-color: #055343;
+    color: aliceblue;
+     margin:1px 40px;
+     padding: 10px;
+
+}
+.html-desc,.css-desc,.js-desc,.react-desc{
+
+    list-style: disc;
+    margin:1px 40px;
+    padding: 1px 10px;
+    overflow: scroll;
+    height: 150px;
+    list-style-position: inside;
+    display: none;
+
+}
+
+/* disable the checkboxes */
+
+#toggle-html,#toggle-css,#toggle-js,#toggle-react
+{
+    display: none;
+}
+
+.html,.css,.js,.react{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* for html toggle */
+#toggle-html:checked +.html +.html-desc
+{
+    display: block;
+}
+/* for css toggle*/
+#toggle-css:checked +.css +.css-desc
+{
+    display: block;
+}
+
+/* for js */
+#toggle-js:checked +.js +.js-desc
+{
+    display: block;
+}
+
+/* for react */
+#toggle-react:checked +.react +.react-desc
+{
+    display: block;
+}
+
+
+

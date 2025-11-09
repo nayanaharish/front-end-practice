@@ -41,7 +41,7 @@
             </h3>
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                  <li>
                     <a href="">About</a>
@@ -51,7 +51,7 @@
                     <a href="">Courses</a>
                     <ul id="dropdown-li-ul" >
                         <li><a href="">Back End</a></li>
-                        <li><a href="">Front End</a></li>
+                        <li><a href="frontend.html">Front End</a></li>
                     </ul>
                 </li>
                 <!-- drop down code will end here -->
@@ -99,17 +99,29 @@
      <main>
         <!-- slides of image -->
         <div class="bg-image">
+
             <div class="apply-online-section">
                 <h1>RJ Technologies</h1>
                 <h4>Best Online & Class Roomm Training Institute</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic optio, eaque consequatur dolore, perferendis atque ipsam harum dolor laborum ipsum veniam. Obcaecati nostrum necessitatibus, expedita deleniti sapiente error atque quam autem modi nisi quaerat quidem facere repellat cum? Aut distinctio ex consequatur hic quas accusamus minus unde sequi repudiandae atque?</p>
+               <!-- hidden checkbox -->
+                <input type="checkbox" name="" id="apply-form">
+                <!-- label for apply online -->
+                    <label for="apply-form" class="apply">
+                        Apply Online
+                    </label> 
 
-                <div class="interest-form-container">
-                    
-                    <button>Apply Online</button>
-                     <label for="" id="close">X</label>
-                    <form action="  " class="interest-form">                        
-                        <h2>Quick Enquiry</h2>                       
+
+                <!-- <div class="interest-form-container">       -->
+                   
+                    <form action="  " class="interest-form">
+                        
+                        <label for="apply-form" class="close">
+                             <h2 style="color: green;">Quick Enquiry</h2>
+                             <i class="fa-solid fa-xmark"></i>
+                            
+                        </label>                        
+                                               
                         <input type="text" name="" id="" placeholder="Name*">
                         <input type="phone" name="" id="" placeholder="10 Digit Mobile Number*">
                         <input type="email" name="" id="" placeholder="Email*">
@@ -118,7 +130,7 @@
 
                     </form>
                 
-                </div>
+                <!-- </div> -->
 
             </div>
         </div>

@@ -219,6 +219,8 @@ h1,p,section,h2,h3,h4,h5,h6
 .wrap-button-form:hover  .enquiry-form {
   display: block;
 }
+
+
 /* main design */
 
 
@@ -262,18 +264,41 @@ h1,p,section,h2,h3,h4,h5,h6
     font-size: large;
     border-radius: 5%; 
 }
-.interest-form-container:hover  .interest-form
+
+/* apply online label as button */
+.apply
 {
-    /* position: relative; */
+    display: inline-block;
+    background-color: #055343;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5%;
+    padding-top: 10px;
+    font-weight: 200;
+}
+
+/* quick enquiry form design */
+
+#apply-form:checked + .apply + .interest-form {
+  display: flex;
+}
+
+#apply-form
+{
+    display: none;
+}
+.close
+{
     display: flex;
-    
+    justify-content:space-between;
+    color: white;
 }
-.interest-form-container:hover  #close
-{
-    /* position: relative; */
-    display: block;
-    
-}
+
+
+
+
 .interest-form
 {
     display: none;    
@@ -286,6 +311,7 @@ h1,p,section,h2,h3,h4,h5,h6
     position: absolute;
     left: 600px;
     top: 60px;
+    color: aliceblue;
     }
 .interest-form input,.interest-form [type="button"],.interest-form textarea,.interest-form h2
 {
